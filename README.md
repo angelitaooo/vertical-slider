@@ -1,8 +1,8 @@
-Yuxi Global New Site
+VERTICAL SLIDER
 ===
 
 ## What is this project?:
-This is the new website for Yuxi Global Company.
+This is a slider built with jquery
 
 ## Key parts
 We use in this project :
