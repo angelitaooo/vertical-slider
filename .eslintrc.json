@@ -1,0 +1,11 @@
+{
+    "extends": "airbnb-base",
+    "plugins": [
+        "import"
+    ],
+    "rules": { 
+            "indent": ["error", "tab"],
+            "no-tabs": "off",
+            "comma-dangle": "off"
+     }
+}

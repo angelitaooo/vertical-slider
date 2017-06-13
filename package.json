@@ -1,0 +1,45 @@
+{
+  "name": "vertical-slider",
+  "version": "1.0.0",
+  "description": "slider",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --open --colors --progress --watch --config webpack.config.js",
+    "live-server": "live-server public",
+    "webpack": "webpack --watch",
+    "eslint:init": "eslint --init",
+    "eslint": "eslint src/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:angelitaooo/vertical-slider.git"
+  },
+  "author": "angelita.cdp@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "extract-text-webpack-plugin": "2.0.0-rc.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "jquery": "^3.1.1",
+    "jquery-mousewheel": "^3.1.13",
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "smoothscroll-polyfill": "^0.3.5",
+    "tether": "^1.4.0"
+  }
+}

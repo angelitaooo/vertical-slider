@@ -1,0 +1,99 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	padding-top: 20px;
+}
+
+.home-banner {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background: #120103;
+	color: #fff;
+	text-align: center;
+}
+
+.options {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	label {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		display: block;
+		background: rgba(255, 255, 255, 0.2);
+		margin: 36px 28px;
+		border: solid 1px rgba(255, 255, 255, 0.4);
+		cursor: pointer;
+	}
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 10;
+	padding: 8em 1em 0;
+	background-color: #120103;
+	background-position: 50% 50%;
+	background-size: cover;
+	transition: top 0s .75s;
+	&-one {
+		background-color: #ab43b4
+	}
+	&-two {
+		background-color: #f3d2a1
+	}
+	&-three {
+		background-color: lightblue
+	}
+	h1 {
+		opacity: 0;
+		transform: translateY(100%);
+		transition: transform .5s .5s, opacity .5s;
+	}
+}
+
+[id^="slide"]:checked+.slide {
+	top: 0;
+	left: 0;
+	z-index: 100;
+	transition: all .65s ease-out;
+	& h1 {
+		opacity: 1;
+		transform: translateY(0);
+		transition: all .5s .5s;
+	}
+}
+
+.foo {
+	height: 100%;
+	background: #fff;
+	color: #000;
+}
+
+
+// *********** NAVIGATION **********
+
+nav {
+	background: #f5b335;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+
+
+
+
